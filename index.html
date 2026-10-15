@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SK Wallet — personal money, banks, loans & investments</title>
+    <meta
+      name="description"
+      content="SK Wallet tracks bank and cash, credit cards, loans, investments, and daily entries. Install the Android preview and follow the screen-by-screen guide."
+    />
+    <link rel="icon" href="assets/brand/icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@700;750;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#0b1f33",
+              soft: "#3d556c",
+              sky: "#5eb3f0",
+              leaf: "#2f9e6a",
+            },
+            fontFamily: {
+              display: ["Syne", "sans-serif"],
+              sans: ["Figtree", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-nav sticky top-0 z-40">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5">
+        <a href="#top" class="flex items-center gap-2.5 no-underline">
+          <img class="brand-mark" src="assets/brand/logo.png" alt="" />
+          <span class="font-display text-lg font-bold tracking-tight text-ink">SK Wallet</span>
+        </a>
+        <nav class="hidden items-center gap-6 text-sm font-semibold text-soft sm:flex">
+          <a href="#features" class="hover:text-ink">Features</a>
+          <a href="#guide" class="hover:text-ink">Guide</a>
+          <a href="#install" class="hover:text-ink">Install</a>
+        </nav>
+        <a
+          class="btn-primary text-sm"
+          href="https://expo.dev/accounts/sanikhan/projects/MyFirstApp/builds/4553c755-0c24-4722-8b13-499b42f0e2cb"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Get Android</a
+        >
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero mx-auto grid max-w-6xl items-center gap-10 px-5 pb-16 pt-12 lg:grid-cols-[1.1fr_0.9fr] lg:pb-24 lg:pt-16">
+        <div class="hero-copy fade-up">
+          <p class="hero-kicker">Personal money app</p>
+          <h1 class="hero-title"><span>SK Wallet</span></h1>
+          <p class="hero-lead">
+            See total money, card bills, loans, and investments in one place. Add daily
+            entries from a floating plus — banks, cash, bKash, and Nagad included.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              class="btn-primary"
+              href="https://expo.dev/accounts/sanikhan/projects/MyFirstApp/builds/4553c755-0c24-4722-8b13-499b42f0e2cb"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Install on Android</a
+            >
+            <a class="btn-ghost" href="#guide">Open the guide</a>
+          </div>
+          <p class="mt-5 text-sm text-soft">
+            Preview build for your phone. Opens over the existing SK Wallet so your records stay.
+          </p>
+        </div>
+        <div class="hero-visual fade-up-delay">
+          <div class="phone-frame">
+            <img
+              src="assets/screens/report.png"
+              alt="SK Wallet Report screen showing total money and monthly summary"
+              width="780"
+              height="1528"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="mx-auto max-w-6xl px-5 pb-20">
+        <h2 class="section-title">What it covers</h2>
+        <p class="section-lead">
+          Built for day-to-day money in Bangladesh — Taka amounts, bank and mobile wallet
+          accounts, credit cards, EMIs, and money you put into investments.
+        </p>
+        <div class="feature-row mt-10">
+          <article class="feature-item">
+            <h3>Report</h3>
+            <p>Total bank and cash, card and loan debt, and income / expense / investment for the month you pick.</p>
+          </article>
+          <article class="feature-item">
+            <h3>Banks & cards</h3>
+            <p>Cash, banks, bKash, Nagad, and credit cards with bill day, pay day, and outstanding.</p>
+          </article>
+          <article class="feature-item">
+            <h3>Entries, loans, invest</h3>
+            <p>Quick add from the plus button. Track EMIs and money lent. Log investment areas without live prices.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="guide" class="manual border-y border-[color:var(--line)] py-16">
+        <div class="mx-auto max-w-6xl px-5">
+          <h2 class="section-title">Screen-by-screen guide</h2>
+          <p class="section-lead">
+            Same screens as the live app. Use this as a short user manual after you install.
+          </p>
+
+          <article class="manual-step">
+            <div class="manual-copy">
+              <div class="step-index">01 · Report</div>
+              <h3>Your money at a glance</h3>
+              <p>
+                Report opens first. The blue card is total money (bank + cash). Below that:
+                owed on cards, owed on loans, and money owed to you.
+              </p>
+              <ul>
+                <li>Switch Month, Year, or All — or open the calendar for a custom range.</li>
+                <li>Use the arrows to move through October (or any month).</li>
+                <li>Income, Expense, and Investment totals follow the period you selected.</li>
+                <li>Header icons: dark mode, categories, and your profile.</li>
+              </ul>
+            </div>
+            <div class="manual-shot">
+              <img src="assets/screens/report.png" alt="Report tab with total money card" width="780" height="1528" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="manual-step reverse">
+            <div class="manual-copy">
+              <div class="step-index">02 · Bank and cards</div>
+              <h3>Accounts that hold the balance</h3>
+              <p>
+                Add cash or a bank with a name and opening balance. bKash and Nagad count as
+                banks. A debit card is the same account as its bank — credit cards sit under Cards.
+              </p>
+              <ul>
+                <li>Tap + Add account for cash or bank.</li>
+                <li>Fund Transfer moves money between accounts.</li>
+                <li>Add Credit Card for bill day, pay day, limit, and outstanding.</li>
+                <li>Edit or delete from the pencil and trash on each card row.</li>
+              </ul>
+            </div>
+            <div class="manual-shot">
+              <img src="assets/screens/banks.png" alt="Bank and cards screen with a credit card" width="780" height="1528" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="manual-step">
+            <div class="manual-copy">
+              <div class="step-index">03 · Transactions</div>
+              <h3>History you can filter</h3>
+              <p>
+                Every income, expense, investment, and card pay shows here. Filter by Last 30,
+                Day, Month, Year, or a custom calendar range, then narrow by category.
+              </p>
+              <ul>
+                <li>All categories is the default — open the dropdown to focus one category.</li>
+                <li>Tap a row’s pencil to edit, trash to remove.</li>
+                <li>The floating + opens Add entry from any main tab.</li>
+              </ul>
+            </div>
+            <div class="manual-shot">
+              <img src="assets/screens/transactions.png" alt="Transactions list with category filter and add button" width="780" height="1528" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="manual-step reverse">
+            <div class="manual-copy">
+              <div class="step-index">04 · Add entry</div>
+              <h3>Log money in seconds</h3>
+              <p>
+                Tap the blue + button. Choose Expense, Income, Investment, or Card pay, enter
+                the amount, pick a category, choose where it came from (or went), set the date,
+                and Save.
+              </p>
+              <ul>
+                <li>Categories: Food, Transport, Rent, Bills, Shopping, Other (you can manage more from Categories).</li>
+                <li>Spent from needs at least one cash or bank account.</li>
+                <li>Note is optional. Close with the X if you change your mind.</li>
+              </ul>
+            </div>
+            <div class="manual-shot">
+              <img src="assets/screens/add-entry.png" alt="Add entry sheet for a new expense" width="780" height="1688" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="manual-step">
+            <div class="manual-copy">
+              <div class="step-index">05 · Loans</div>
+              <h3>EMI, loans, and money lent</h3>
+              <p>
+                Track what you still owe and what others owe you. Paid loans lock so you do not
+                edit them by mistake — reopen when you need to.
+              </p>
+              <ul>
+                <li>Tap + Add loan to start an EMI, normal loan, or money lent.</li>
+                <li>The list icon switches between running loans and all (including paid).</li>
+                <li>Paid rows appear muted so active debt stays easy to see.</li>
+              </ul>
+            </div>
+            <div class="manual-shot">
+              <img src="assets/screens/loans.png" alt="Loans screen empty state with add loan" width="780" height="1528" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="manual-step reverse">
+            <div class="manual-copy">
+              <div class="step-index">06 · Investment</div>
+              <h3>Money you put in</h3>
+              <p>
+                Create areas like Stock market, DPS, or SIP and record what you contributed.
+                The app does not look up live market prices — it tracks what you put in.
+              </p>
+              <ul>
+                <li>Tap + Add area to name a bucket.</li>
+                <li>Add contributions from Add entry → Investment, or from inside an area.</li>
+                <li>Totals roll into the Report investment line for your selected period.</li>
+              </ul>
+            </div>
+            <div class="manual-shot">
+              <img src="assets/screens/investments.png" alt="Investment screen with add area" width="780" height="1528" loading="lazy" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="install" class="mx-auto max-w-6xl px-5 py-16">
+        <div class="install-panel">
+          <h2 class="section-title">Install on Android</h2>
+          <p class="section-lead">
+            Use the latest preview build. Install over the SK Wallet that already has your
+            records — do not uninstall first.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a
+              class="btn-primary"
+              href="https://expo.dev/accounts/sanikhan/projects/MyFirstApp/builds/4553c755-0c24-4722-8b13-499b42f0e2cb"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open install page</a
+            >
+            <a
+              class="btn-ghost"
+              href="https://expo.dev/artifacts/eas/d2Rg1nQuDtIrCv-RgdcszSUHiFD54dnnO0I-rMsqU04.apk"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Direct APK</a
+            >
+          </div>
+          <ol>
+            <li>Open the install page on your Android phone (or download the APK).</li>
+            <li>Allow the browser to install apps if Android asks.</li>
+            <li>Install over the existing SK Wallet (<code>com.myfirstapp</code>) so balances and history stay.</li>
+            <li>If an empty second SK Wallet is still on the phone from an older package id, you can remove that empty one after the main app is updated.</li>
+          </ol>
+          <p class="mt-5 text-sm text-soft">
+            iPhone install needs a registered device and a separate iOS preview build. Ask when you are ready for that.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-8 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-2">
+          <img class="brand-mark" src="assets/brand/logo.png" alt="" width="36" height="36" />
+          <span class="font-display font-bold text-ink">SK Wallet</span>
+        </div>
+        <p class="m-0">Personal money · banks · cards · loans · investments</p>
+      </div>
+    </footer>
+  </body>
+</html>
